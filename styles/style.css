@@ -32,6 +32,7 @@
 
 .menu {
     font-size: 16px;
+    width: 155px;
     color: #4a4a4a;
     margin: 0 0 13px;
     list-style: none;
@@ -39,7 +40,6 @@
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
-    width: 155px;
 }
 
 a {
@@ -49,23 +49,35 @@ a {
 
 .menu_item {
     display: inline;
+    text-align: center;
    
 }
 
 .content {
     background: #3CDBC0;
     text-align: center;
-    font-size: 16px;
     color: #FFFFFF;
     height: 100vh;
-    width: 100%;
+    width: 75%;
     margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
 
 @media all and (min-width: 768px) {
     .header {
         flex-wrap: nowrap;
         justify-content: flex-end;
+        padding: 20px 30px;
+        box-sizing: border-box;
     }
     .logo__box {
         justify-content: flex-start;
@@ -74,7 +86,11 @@ a {
         font-size: 16px;
     }
 
-    .content {
+    .title {
         font-size: 40px;
+    }
+
+    .content {
+        width: 100%;
     }
 }
