@@ -1,0 +1,35 @@
+.page {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.logo__box {
+    width: 100%;
+}
+
+.logo__image {
+    width: 155px;
+}
+
+.menu {
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+.content {
+    background: #3CDBC0;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 100vh;
+}
