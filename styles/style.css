@@ -36,7 +36,8 @@
     color: #4a4a4a;
     margin: 0 0 13px;
     list-style: none;
-    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
