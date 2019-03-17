@@ -5,17 +5,19 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
 }
-
+/*header*/
 .header {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     width: 100%;
     margin: 0;
     position: fixed;
     height: 100px;
     background: white;
+    padding: 10px 0 13px;
 }
 
 .logo__box {
@@ -27,23 +29,27 @@
 
 .logo__image {
     width: 155px;
-    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.logo__image__link {
+    height: 61px;
 }
 
 .menu {
+    text-transform: uppercase;
     font-size: 16px;
     width: 155px;
     color: #4a4a4a;
-    margin: 0 0 13px;
+    margin: 0;
     list-style: none;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0;
     flex-grow: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-a {
+.menu_item_link {
     text-decoration: none;
     color: #4a4a4a;
 }
@@ -51,19 +57,21 @@ a {
 .menu_item {
     display: inline;
     text-align: center;
-   
 }
 
+.menu_item + .menu_item {
+    margin-left: 20px;
+}
+
+/*main content*/
 .content {
     background: #3CDBC0;
-    text-align: center;
     color: #FFFFFF;
     height: 100vh;
-    width: 75%;
-    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
 }
 
 .title {
@@ -73,6 +81,7 @@ a {
     padding-right: 50px;
     }
 
+/*tablet and desktop*/
 @media all and (min-width: 768px) {
     .header {
         flex-wrap: nowrap;
