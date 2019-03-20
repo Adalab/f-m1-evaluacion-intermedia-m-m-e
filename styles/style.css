@@ -6,30 +6,28 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    min-height: 100vh;
+    background: #3CDBC0;
+
 }
 /*header*/
 .header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     margin: 0;
     position: fixed;
     height: 100px;
+    width: 100vw;
     background: white;
     padding: 10px 0 13px;
 }
 
-.logo__box {
-    flex-grow: 2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .logo__image {
+    display: block;
     width: 155px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .logo__image__link {
@@ -43,8 +41,8 @@
     color: #4a4a4a;
     margin: 0;
     list-style: none;
-    padding: 0;
-    flex-grow: 1;
+    padding-top: 10px;
+    padding-left: 0;
     display: flex;
     justify-content: center;
 }
@@ -60,40 +58,51 @@
 }
 
 .menu_item + .menu_item {
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 /*main content*/
 .content {
-    background: #3CDBC0;
+    padding-top: 122px;
     color: #FFFFFF;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.content__container {
+    display: block;
+    position: relative;
+    flex-grow: 1;
 }
 
 .title {
     font-size: 30px;
     text-align: center;
-    width: 200px;
+    max-width: 200px;
     text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
 
 /*tablet and desktop*/
 @media all and (min-width: 768px) {
     .header {
-        flex-wrap: nowrap;
+        display: flex;
         justify-content: space-between;
         padding: 20px 30px;
         box-sizing: border-box;
-        margin-top: 0;
         align-items: center;
     }
-    .logo__box {
-        justify-content: flex-start;
+    /* .logo__image {
+        display: inline;
     }
+
+    .logo__image__link {
+        display: inline;
+    } */
     .menu {
         font-size: 16px;
     }
